@@ -4,7 +4,7 @@ A modern and responsive **personal portfolio / CV web application**, built to sh
 
 This project was designed not only as a visual portfolio, but also as a demonstration of **frontend engineering best practices**, reusable components, and thoughtful UI/UX decisions.
 
-🔗 **Live demo:** https://front-end-cv-portfolio.app  
+🔗 **Live demo:** https://front-end-cv-portfolio.vercel.app/
 📦 **Repository:** https://github.com/maria-eduarda-cagy/front-end-cv-app
 
 ---
