@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { CareerItem } from "./my-career";
-import { careerData } from "../utils/utils";
+import { type MyCareerProps } from "../utils/utils";
 import {
   CarouselWrapper,
   CarouselRow,
@@ -9,7 +9,7 @@ import {
   ArrowButton,
 } from "./styles";
 
-export function MyCareerCarousel() {
+export function MyCareerCarousel({ careerData }: MyCareerProps) {
   const trackRef = useRef<HTMLDivElement | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 

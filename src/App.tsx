@@ -20,6 +20,10 @@ import codeIcon from "./assets/icons/code.svg";
 import profile from "./assets/profile/profile.jpeg";
 import { Carousel } from "./components/carousel/carousel";
 import { MyCareerCarousel } from "./components/my-career/my-career-carousel";
+import {
+  academicCareerData,
+  professionalCareerData,
+} from "./components/utils/references";
 
 function App() {
   return (
@@ -89,7 +93,11 @@ function App() {
       </div>
       <div className="container-start" id="my-career">
         <Text preset="textWithBackground">My Career</Text>
-        <MyCareerCarousel />
+
+        <MyCareerCarousel careerData={professionalCareerData} />
+
+        <Text preset="textWithBackground">Academic Area</Text>
+        <MyCareerCarousel careerData={academicCareerData} />
       </div>
     </div>
   );
