@@ -19,7 +19,7 @@ import avatar from "./assets/profile/avatar.png";
 import codeIcon from "./assets/icons/code.svg";
 import profile from "./assets/profile/profile.jpeg";
 import { Carousel } from "./components/carousel/carousel";
-import { MyCareer } from "./components/my-career/my-career";
+import { MyCareerCarousel } from "./components/my-career/my-career-carousel";
 
 function App() {
   return (
@@ -89,7 +89,7 @@ function App() {
       </div>
       <div className="container-start" id="my-career">
         <Text preset="textWithBackground">My Career</Text>
-        <MyCareer />
+        <MyCareerCarousel />
       </div>
     </div>
   );

@@ -12,6 +12,10 @@ interface StyledTextProps {
 }
 
 export const StyledText = styled.span<StyledTextProps>`
+
+  @media (min-width: 768px) {
+  font-weight: 500;
+  }
   ${(props) =>
     props.variant === "title" &&
     css`
@@ -22,7 +26,7 @@ export const StyledText = styled.span<StyledTextProps>`
     props.variant === "subtitle" &&
     css`
       font-size: 24px;
-      font-weight: 700;
+      font-weight: 800;
     `}
 
   ${(props) =>
@@ -37,6 +41,7 @@ export const StyledText = styled.span<StyledTextProps>`
     props.variant === "subtext" &&
     css`
       font-size: 14px;
+      font-weight: 800;
     `}
   ${(props) =>
     props.variant === "textWithBackground" &&
@@ -44,7 +49,7 @@ export const StyledText = styled.span<StyledTextProps>`
       font-size: 16px;
       background-color: #7b4ae230;
       color: #fff;
-      font-weight: 600;
+      font-weight: 800;
       padding: 4px 8px;
       border-radius: 8px;
       width: fit-content;
