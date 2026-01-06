@@ -1,9 +1,9 @@
-import { CarouselTrack, CarouselWrapper } from "./styles";
+import { CarouselAutoTrack, CarouselAutoWrapper } from "./styles";
 import { skills } from "../utils/utils";
-export function Carousel() {
+export function CarouselAuto() {
   return (
-    <CarouselWrapper>
-      <CarouselTrack>
+    <CarouselAutoWrapper>
+      <CarouselAutoTrack>
         {[...skills, ...skills].map((skill, index) => (
           <img
             key={`${skill.name}-${index}`}
@@ -12,7 +12,7 @@ export function Carousel() {
             className="skill-icon"
           />
         ))}
-      </CarouselTrack>
-    </CarouselWrapper>
+      </CarouselAutoTrack>
+    </CarouselAutoWrapper>
   );
 }

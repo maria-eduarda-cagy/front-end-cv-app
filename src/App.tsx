@@ -6,7 +6,7 @@ import { AppLayout } from "./Layout";
 
 //components
 import { Text } from "./components/text/text";
-import { Carousel } from "./components/carousel/carousel";
+import { CarouselAuto } from "./components/carousel/carousel-autamate";
 import { MyCareerCarousel } from "./components/my-career/my-career-carousel";
 import {
   academicCareerData,
@@ -28,6 +28,8 @@ import codeIcon from "./assets/icons/code.svg";
 import profile from "./assets/profile/profile.jpeg";
 import linkedinIcon from "./assets/icons/linkedin.svg";
 import githubIcon from "./assets/icons/github.svg";
+import { RecommendationCarousel } from "./components/recommendations/recommendations";
+
 function App() {
   return (
     <>
@@ -52,10 +54,10 @@ function App() {
                 href="https://www.linkedin.com/in/maria-eduarda-cagy/"
                 target="_blank"
               >
-                <img src={linkedinIcon} alt="linkedIn Icon" />
+                <img src={linkedinIcon} alt="linkedIn Icon" width={36}/>
               </a>
               <a href="https://github.com/maria-eduarda-cagy" target="_blank">
-                <img src={githubIcon} alt="github Icon" width={36}/>
+                <img src={githubIcon} alt="github Icon" width={36} />
               </a>
             </div>
             {/* <Button>Lets Talk?</Button> */}
@@ -111,12 +113,16 @@ function App() {
             </Text>
             <MyCareerCarousel careerData={academicCareerData} />
           </div>
+          <div className="container-start" id="recommendations">
+            <Text preset="textWithBackground">Recommendations</Text>
+            <RecommendationCarousel />
+          </div>
           <div className="container-start" id="skills">
             <Text preset="textWithBackground">Skills</Text>
             <Text preset="subtext" style={{ marginBottom: "1rem" }}>
               Technologies I use to build amazing apps:
             </Text>
-            <Carousel />
+            <CarouselAuto />
           </div>
         </main>
       </AppLayout>

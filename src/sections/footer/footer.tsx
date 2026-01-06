@@ -16,6 +16,8 @@ export default function Footer() {
           <img src={githubIcon} alt="github Icon" />
         </a>
       </div>
+
+      <span>Copyright © Maria Cagy · 2026</span>
     </FooterBackground>
   );
 }

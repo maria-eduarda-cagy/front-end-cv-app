@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeaderBackground = styled.div`
   width: 100%;
   height: 64px;
-  display:none;
+  display: none;
   .mobile-header-icons {
     display: flex;
     justify-content: center;
@@ -14,20 +14,29 @@ export const HeaderBackground = styled.div`
     background-color: #7b4ae2;
     opacity: 0.3;
     border-radius: 17px;
-   
   }
 `;
 
 export const FooterBackground = styled.footer`
   width: 100%;
-  height: 64px;
+  height: 84px;
   margin-top: 2rem;
 
-  background-color: #7b4ae2;
+  background-color: #7b4ae230;
   opacity: 0.3;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0;
 
+  span {
+    font-size: 14px;
+  }
+
+  .mobile-header-icons {
+    display: flex;
+    gap: 1rem;
+  }
 `;
