@@ -22,7 +22,7 @@ export function MyCareer() {
         data collection and processing for AI- powered features and user
         behavior analysis. <br />
         <br />
-        <b>Helped build a booth at the Web Summit Rio 2024</b>, representing the
+        <b>Helped build a booth at the Web Summit Rio 2025</b>, representing the
         company with machine learning and AI-based civic engagement solutions.{" "}
         <br />
         <br />
