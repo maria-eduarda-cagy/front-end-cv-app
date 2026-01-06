@@ -27,7 +27,7 @@ import avatar from "./assets/profile/avatar.png";
 import codeIcon from "./assets/icons/code.svg";
 import profile from "./assets/profile/profile.jpeg";
 import linkedinIcon from "./assets/icons/linkedin.svg";
-import githubIcon from "./assets/icons/git.svg";
+import githubIcon from "./assets/icons/github.svg";
 function App() {
   return (
     <>
