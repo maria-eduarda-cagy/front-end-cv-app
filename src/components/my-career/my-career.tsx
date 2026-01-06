@@ -29,7 +29,7 @@ export function CareerItem({ experience }: Props) {
 
       <Text preset="subtext" style={{ textAlign: "start" }}>
         {experience.period}
-      </Text>
+      </Text><br />
 
       <Text preset="text" style={{ textAlign: "start"}}>
         {experience.bullets.map((b, idx) => (
