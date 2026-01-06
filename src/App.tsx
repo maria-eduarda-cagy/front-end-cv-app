@@ -4,8 +4,8 @@ import "./App.css";
 //components and sections
 import Header from "./sections/header/header";
 import { Text } from "./components/text/text";
-import Download from "./components/download/download";
-import Button from "./components/button/button";
+// import Download from "./components/download/download";
+// import Button from "./components/button/button";
 import Experience from "./components/experience/experience";
 
 //utils
@@ -38,10 +38,10 @@ function App() {
         <Text preset="text">Front-end Developer</Text>
         <Text preset="subtext">React • TypeScript • Next.JS </Text>
       </div>
-      <div className="container-center" id="contact">
+      {/* <div className="container-center" id="contact">
         <Download />
         <Button>Lets Talk?</Button>
-      </div>
+      </div> */}
       <div className="container-center" id="experience">
         <Experience
           src={codeIcon}
