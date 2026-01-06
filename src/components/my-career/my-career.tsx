@@ -17,12 +17,12 @@ export function CareerItem({ experience }: Props) {
           rel="noreferrer"
           style={{ color: "#fff" }}
         >
-          <Text preset="subtitle" style={{ textAlign: "start" }}>
+          <Text preset="subtitle" style={{ textAlign: "start",  marginRight: "1rem" }}>
             {experience.title}
           </Text>
         </a>
       ) : (
-        <Text preset="subtitle" style={{ textAlign: "start" }}>
+        <Text preset="subtitle" style={{ textAlign: "start",  marginRight: "1rem" }}>
           {experience.title}
         </Text>
       )}
@@ -31,7 +31,7 @@ export function CareerItem({ experience }: Props) {
         {experience.period}
       </Text>
 
-      <Text preset="text" style={{ textAlign: "start", marginTop: "1rem" }}>
+      <Text preset="text" style={{ textAlign: "start"}}>
         {experience.bullets.map((b, idx) => (
           <span key={idx}>
             <b>{b.highlight}</b>, {b.text}

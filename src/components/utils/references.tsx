@@ -103,7 +103,7 @@ export const professionalCareerData: CareerExperience[] = [
 
 export const academicCareerData: CareerExperience[] = [
   {
-    title: "Bachelor’s Degree in Computer Science",
+    title: "Bachelor’s Degree",
     period: "2023 · Present",
     bullets: [
       {

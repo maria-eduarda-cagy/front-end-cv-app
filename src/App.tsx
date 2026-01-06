@@ -1,10 +1,18 @@
 //styles
 import "./App.css";
 
-//components and sections
-import Header from "./sections/header/header";
+//layout
+import { AppLayout } from "./Layout";
+
+//components
 import { Text } from "./components/text/text";
-// import Download from "./components/download/download";
+import { Carousel } from "./components/carousel/carousel";
+import { MyCareerCarousel } from "./components/my-career/my-career-carousel";
+import {
+  academicCareerData,
+  professionalCareerData,
+} from "./components/utils/references";
+
 // import Button from "./components/button/button";
 import Experience from "./components/experience/experience";
 
@@ -18,88 +26,101 @@ import {
 import avatar from "./assets/profile/avatar.png";
 import codeIcon from "./assets/icons/code.svg";
 import profile from "./assets/profile/profile.jpeg";
-import { Carousel } from "./components/carousel/carousel";
-import { MyCareerCarousel } from "./components/my-career/my-career-carousel";
-import {
-  academicCareerData,
-  professionalCareerData,
-} from "./components/utils/references";
-
+import linkedinIcon from "./assets/icons/linkedin.svg";
+import githubIcon from "./assets/icons/git.svg";
 function App() {
   return (
-    <div className="page-container">
-      <Header />
-      <div className="container-center" id="avatar">
-        <a
-          href="https://www.linkedin.com/in/maria-eduarda-cagy/"
-          target="_blank"
-        >
-          <img src={avatar} className="avatar" alt="avatar" />
-        </a>
-      </div>
-      <div className="container-center" id="profile">
-        <Text preset="title">Maria Cagy</Text>
-        <Text preset="text">Front-end Developer</Text>
-        <Text preset="subtext">React • TypeScript • Next.JS </Text>
-      </div>
-      {/* <div className="container-center" id="contact">
-        <Download />
-        <Button>Lets Talk?</Button>
-      </div> */}
-      <div className="container-center" id="experience">
-        <Experience
-          src={codeIcon}
-          position="Front-End Developer"
-          using="React and TypeScript"
-          time={experienceWithReactAndTSStr}
-        />
-        <Experience
-          src={codeIcon}
-          position="Developer"
-          time={experienceAsFrontendDevStr}
-        />
-      </div>
-      <div className="container-center" id="profile-image">
-        <a
-          href="https://www.linkedin.com/in/maria-eduarda-cagy/"
-          target="_blank"
-        >
-          <img
-            src={profile}
-            className="profile"
-            alt="profile image"
-            width={300}
-          />
-        </a>
-      </div>
-      <div className="container-start" id="about-me">
-        <Text preset="textWithBackground">About me</Text>
-        <Text preset="text" style={{ textAlign: "start" }}>
-          I’m a frontend-focused full-stack developer who enjoys turning ideas
-          into clear and reliable digital experiences. I work mainly with React,
-          TypeScript and Next.js, focusing on clean, accessible and performant
-          interfaces. I’m currently a Computer Science student, which
-          strengthens my technical foundation and problem-solving skills. At
-          Voting Buddy, I collaborate closely with product, design and
-          engineering teams. I’m also comfortable working across the stack with
-          Node.js, Strapi and Python. I’m motivated by building products that
-          feel simple, fast and intuitive to use.
-        </Text>
-      </div>
-      <div className="container-start" id="skills">
-        <Text preset="textWithBackground">Skills</Text>
-        <Text preset="subtext">Technologies I use to build amazing apps:</Text>
-        <Carousel />
-      </div>
-      <div className="container-start" id="my-career">
-        <Text preset="textWithBackground">My Career</Text>
+    <>
+      <AppLayout>
+        <main className="page-container">
+          <div className="container-center" id="avatar">
+            <a
+              href="https://www.linkedin.com/in/maria-eduarda-cagy/"
+              target="_blank"
+            >
+              <img src={avatar} className="avatar" alt="avatar" />
+            </a>
+          </div>
+          <div className="container-center" id="profile">
+            <Text preset="title">Maria Cagy</Text>
+            <Text preset="text">Front-end Developer</Text>
+            <Text preset="subtext">React • TypeScript • Next.JS </Text>
+          </div>
+          <div className="container-center" id="contact">
+            <div className="contact-icons">
+              <a
+                href="https://www.linkedin.com/in/maria-eduarda-cagy/"
+                target="_blank"
+              >
+                <img src={linkedinIcon} alt="linkedIn Icon" />
+              </a>
+              <a href="https://github.com/maria-eduarda-cagy" target="_blank">
+                <img src={githubIcon} alt="github Icon" width={36}/>
+              </a>
+            </div>
+            {/* <Button>Lets Talk?</Button> */}
+          </div>
+          <div className="container-center" id="experience">
+            <Experience
+              src={codeIcon}
+              position="Front-End Developer"
+              using="React and TypeScript"
+              time={experienceWithReactAndTSStr}
+            />
+            <Experience
+              src={codeIcon}
+              position="Developer"
+              time={experienceAsFrontendDevStr}
+            />
+          </div>
+          <div className="container-center" id="profile-image">
+            <a
+              href="https://www.linkedin.com/in/maria-eduarda-cagy/"
+              target="_blank"
+            >
+              <img
+                src={profile}
+                className="profile"
+                alt="profile image"
+                width={300}
+              />
+            </a>
+          </div>
+          <div className="container-start" id="about-me">
+            <Text preset="textWithBackground">About me</Text>
+            <Text preset="text" style={{ textAlign: "start" }}>
+              I’m a frontend-focused full-stack developer who enjoys turning
+              ideas into clear and reliable digital experiences. I work mainly
+              with React, TypeScript and Next.js, focusing on clean, accessible
+              and performant interfaces. I’m currently a Computer Science
+              student, which strengthens my technical foundation and
+              problem-solving skills. At Voting Buddy, I collaborate closely
+              with product, design and engineering teams. I’m also comfortable
+              working across the stack with Node.js, Strapi and Python. I’m
+              motivated by building products that feel simple, fast and
+              intuitive to use.
+            </Text>
+          </div>
+          <div className="container-start" id="my-career">
+            <Text preset="textWithBackground">My Career</Text>
 
-        <MyCareerCarousel careerData={professionalCareerData} />
+            <MyCareerCarousel careerData={professionalCareerData} />
 
-        <Text preset="textWithBackground">Academic Area</Text>
-        <MyCareerCarousel careerData={academicCareerData} />
-      </div>
-    </div>
+            <Text preset="textWithBackground" style={{ marginTop: "1rem" }}>
+              Academic Area
+            </Text>
+            <MyCareerCarousel careerData={academicCareerData} />
+          </div>
+          <div className="container-start" id="skills">
+            <Text preset="textWithBackground">Skills</Text>
+            <Text preset="subtext" style={{ marginBottom: "1rem" }}>
+              Technologies I use to build amazing apps:
+            </Text>
+            <Carousel />
+          </div>
+        </main>
+      </AppLayout>
+    </>
   );
 }
 

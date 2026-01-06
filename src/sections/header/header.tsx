@@ -1,4 +1,4 @@
-import { Background } from "./styles";
+import { HeaderBackground } from "../styles";
 
 //icons
 import linkedinIcon from "../../assets/icons/linkedin.svg";
@@ -6,7 +6,7 @@ import githubIcon from "../../assets/icons/github.svg";
 
 export default function Header() {
   return (
-    <Background>
+    <HeaderBackground>
       <div className="mobile-header-icons">
         <a
           href="https://www.linkedin.com/in/maria-eduarda-cagy/"
@@ -21,6 +21,6 @@ export default function Header() {
           <img src={githubIcon}  alt="github Icon" />
         </a>
       </div>
-    </Background>
+    </HeaderBackground>
   );
 }

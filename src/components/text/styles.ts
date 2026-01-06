@@ -12,9 +12,9 @@ interface StyledTextProps {
 }
 
 export const StyledText = styled.span<StyledTextProps>`
-
+  max-width: fit-content;
   @media (min-width: 768px) {
-  font-weight: 500;
+    font-weight: 500;
   }
   ${(props) =>
     props.variant === "title" &&
