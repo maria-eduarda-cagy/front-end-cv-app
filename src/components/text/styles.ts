@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-
+import { up } from "../../styles/media";
 export type TextVariants =
   | "title"
   | "subtitle"
@@ -13,7 +13,7 @@ interface StyledTextProps {
 
 export const StyledText = styled.span<StyledTextProps>`
   max-width: fit-content;
-  @media (min-width: 768px) {
+  ${up.md} {
     font-weight: 500;
   }
   ${(props) =>

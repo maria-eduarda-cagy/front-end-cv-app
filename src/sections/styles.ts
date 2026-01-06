@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { up } from "../styles/media";
 
 export const HeaderWrapper = styled.header`
   position: sticky;
@@ -19,8 +20,8 @@ export const HeaderInner = styled.div`
   justify-content: space-between;
   gap: 1rem;
 
-  @media (max-width: 768px) {
-    padding: 0.75rem 1rem;
+  ${up.md} {
+    padding: 0.9rem 1.25rem;
   }
 `;
 
@@ -85,7 +86,7 @@ export const Nav = styled.nav<{
     width: 100%;
 }
 
-    @media (min-width: 769px) {
+     ${up.md} {
       display: none;
     }
   `}

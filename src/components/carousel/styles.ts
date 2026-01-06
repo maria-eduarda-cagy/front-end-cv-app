@@ -21,6 +21,7 @@ export const CarouselAutoTrack = styled.div`
   gap: 1.5rem;
   width: 100%;
   animation: ${scroll} 20s linear infinite;
+  
   @media (prefers-reduced-motion: reduce) {
     animation: none;
     transform: none;

@@ -1,3 +1,5 @@
+@use "./styles/mixins" as *;
+
 #root {
   width: 100%;
 }
@@ -38,11 +40,11 @@ html {
   max-width: 300px;
   overflow-x: hidden;
 
-  @media (min-width: 420px) {
+  @include mobile() {
     max-width: 768px;
     padding-inline: 2em;
   }
-  @media (min-width: 769px) {
+  @include tablet(){
     max-width: 1210px;
   }
 }
@@ -83,7 +85,7 @@ html {
 }
 
 .row {
-  @media (min-width: 769px) {
+  @include tablet() {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,13 +94,13 @@ html {
 }
 
 #profile-image {
-  @media (min-width: 769px) {
+  @include tablet() {
     width: fit-content;
   }
 }
 
 #profile {
-  @media (min-width: 420px) {
+  @include mobile(){
     display: flex;
     flex-direction: column;
     align-items: center;
