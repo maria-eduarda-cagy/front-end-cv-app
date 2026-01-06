@@ -8,5 +8,4 @@ export const MyCareerContainer = styled.div`
   border-radius: 16px;
   padding: 10px;
 
-  width: 100%;
 `;
