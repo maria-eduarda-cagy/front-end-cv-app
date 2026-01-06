@@ -1,7 +1,7 @@
 
 import Footer from "./sections/footer/footer";
 import Header from "./sections/header/header";
-import "./Layout.css";
+import "./Layout.scss";
 
 export function AppLayout({ children }: { children: React.ReactNode }) {
   return (

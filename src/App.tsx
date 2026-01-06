@@ -1,5 +1,5 @@
 //styles
-import "./App.css";
+import "./App.scss";
 
 //layout
 import { AppLayout } from "./Layout";
