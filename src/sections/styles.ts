@@ -22,8 +22,7 @@ export const FooterBackground = styled.footer`
   height: 84px;
   margin-top: 2rem;
 
-  background-color: #7b4ae230;
-  opacity: 0.3;
+  background-color: #7b4ae210;
 
   display: flex;
   flex-direction: column;
