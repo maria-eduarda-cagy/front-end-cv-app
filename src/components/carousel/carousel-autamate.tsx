@@ -4,7 +4,7 @@ export function CarouselAuto() {
   return (
     <CarouselAutoWrapper>
       <CarouselAutoTrack>
-        {[...skills, ...skills].map((skill, index) => (
+        {[...skills, ...skills, ...skills].map((skill, index) => (
           <img
             key={`${skill.name}-${index}`}
             src={skill.src}

@@ -10,7 +10,7 @@ type Props = {
 export function Recommendation({ recommendation }: Props) {
   return (
     <RecommendationContainer>
-      <div className="row">
+      <div className="row-recommendation" >
         <img
           src={recommendation.photo}
           className="profile-image"

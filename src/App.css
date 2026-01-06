@@ -15,7 +15,6 @@
 .page-container,
 .container-start,
 .container-center {
-  max-width: 300px;
   width: 100%;
 }
 
@@ -27,6 +26,15 @@
   justify-self: center;
   gap: 1rem;
   max-width: 300px;
+  overflow-x: hidden;
+
+  @media (min-width: 420px) {
+    max-width: 768px;
+    padding-inline: 2em;
+  }
+  @media (min-width: 769px) {
+    max-width: 1210px;
+  }
 }
 
 .avatar {
@@ -52,7 +60,7 @@
   align-self: start;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 300px;
+
   width: 100%;
 }
 
@@ -61,18 +69,47 @@
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 300px;
   width: 100%;
 }
 
-.contact-icons{
+.row {
+  @media (min-width: 769px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+#profile-image {
+  @media (min-width: 769px) {
+    width: fit-content;
+  }
+}
+
+#profile {
+  @media (min-width: 420px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icons {
   display: flex;
   align-items: center;
   gap: 1rem;
   width: 100%;
   justify-content: center;
 
-  a:hover{
+  a:hover {
     opacity: 0.5;
   }
 }

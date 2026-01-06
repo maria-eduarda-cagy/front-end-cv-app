@@ -45,8 +45,10 @@ function App() {
           </div>
           <div className="container-center" id="profile">
             <Text preset="title">Maria Cagy</Text>
-            <Text preset="text">Front-end Developer</Text>
-            <Text preset="subtext">React • TypeScript • Next.JS </Text>
+            <div className="column-container">
+              <Text preset="text">Front-end Developer</Text>
+              <Text preset="subtext">React • TypeScript • Next.JS </Text>
+            </div>
           </div>
           <div className="container-center" id="contact">
             <div className="contact-icons">
@@ -54,7 +56,7 @@ function App() {
                 href="https://www.linkedin.com/in/maria-eduarda-cagy/"
                 target="_blank"
               >
-                <img src={linkedinIcon} alt="linkedIn Icon" width={36}/>
+                <img src={linkedinIcon} alt="linkedIn Icon" width={36} />
               </a>
               <a href="https://github.com/maria-eduarda-cagy" target="_blank">
                 <img src={githubIcon} alt="github Icon" width={36} />
@@ -75,33 +77,35 @@ function App() {
               time={experienceAsFrontendDevStr}
             />
           </div>
-          <div className="container-center" id="profile-image">
-            <a
-              href="https://www.linkedin.com/in/maria-eduarda-cagy/"
-              target="_blank"
-            >
-              <img
-                src={profile}
-                className="profile"
-                alt="profile image"
-                width={300}
-              />
-            </a>
-          </div>
-          <div className="container-start" id="about-me">
-            <Text preset="textWithBackground">About me</Text>
-            <Text preset="text" style={{ textAlign: "start" }}>
-              I’m a frontend-focused full-stack developer who enjoys turning
-              ideas into clear and reliable digital experiences. I work mainly
-              with React, TypeScript and Next.js, focusing on clean, accessible
-              and performant interfaces. I’m currently a Computer Science
-              student, which strengthens my technical foundation and
-              problem-solving skills. At Voting Buddy, I collaborate closely
-              with product, design and engineering teams. I’m also comfortable
-              working across the stack with Node.js, Strapi and Python. I’m
-              motivated by building products that feel simple, fast and
-              intuitive to use.
-            </Text>
+          <div className="row">
+            <div className="container-center" id="profile-image">
+              <a
+                href="https://www.linkedin.com/in/maria-eduarda-cagy/"
+                target="_blank"
+              >
+                <img
+                  src={profile}
+                  className="profile"
+                  alt="profile image"
+                  width={300}
+                />
+              </a>
+            </div>
+            <div className="container-start" id="about-me">
+              <Text preset="textWithBackground">About me</Text>
+              <Text preset="text" style={{ textAlign: "start" }}>
+                I’m a frontend-focused full-stack developer who enjoys turning
+                ideas into clear and reliable digital experiences. I work mainly
+                with React, TypeScript and Next.js, focusing on clean,
+                accessible and performant interfaces. I’m currently a Computer
+                Science student, which strengthens my technical foundation and
+                problem-solving skills. At Voting Buddy, I collaborate closely
+                with product, design and engineering teams. I’m also comfortable
+                working across the stack with Node.js, Strapi and Python. I’m
+                motivated by building products that feel simple, fast and
+                intuitive to use.
+              </Text>
+            </div>
           </div>
           <div className="container-start" id="my-career">
             <Text preset="textWithBackground">My Career</Text>

@@ -19,8 +19,12 @@ const scroll = keyframes`
 export const CarouselAutoTrack = styled.div`
   display: flex;
   gap: 1.5rem;
-  width: max-content;
+  width: 100%;
   animation: ${scroll} 20s linear infinite;
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+    transform: none;
+  }
 `;
 
 export const Dot = styled.button<{ $active: boolean }>`
