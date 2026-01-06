@@ -1,73 +1,54 @@
-# React + TypeScript + Vite
+# Front-End CV App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **personal portfolio / CV web application**, built to showcase professional experience, skills, recommendations, and projects in a clean, interactive, and user-centered way.
 
-Currently, two official plugins are available:
+This project was designed not only as a visual portfolio, but also as a demonstration of **frontend engineering best practices**, reusable components, and thoughtful UI/UX decisions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Live demo:** https://front-end-cv-portfolio.vercel.app/
+📦 **Repository:** https://github.com/maria-eduarda-cagy/front-end-cv-app
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- ⚛️ **Modern React architecture** with reusable and composable components
+- 🧩 **Generic reusable Carousel** used for both Career and Recommendations sections
+- 📱 **Fully responsive design** (desktop, tablet, mobile)
+- ♿ **Accessibility-aware UI** (keyboard navigation, ARIA labels, reduced motion support)
+- 🎨 **Consistent design system** with styled-components
+- 🧠 **Clean separation of concerns** (UI, data, logic)
+- 🖼️ **Auto-scrolling skills carousel** with smooth infinite animation
+- 💬 **Recommendations section** powered by structured data objects
+- 🚀 Deployed on **Vercel**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **React**
+- **TypeScript**
+- **Vite**
+- **Styled-components**
+- **CSS animations & keyframes**
+- **Vercel** (deployment)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧱 Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```txt
+src/
+├── components/
+│   ├── carousel/          # Reusable generic carousel
+│   ├── career/            # Career section & items
+│   ├── recommendation/    # Recommendations & carousel
+│   ├── text/              # Typography component
+│   └── layout/            # Header, footer, layout
+│
+├── utils/
+│   ├── types.ts           # Shared TypeScript types
+│   ├── references.ts     # Career & recommendation data
+│
+├── styles/                # Global and shared styles
+└── App.tsx
 ```
