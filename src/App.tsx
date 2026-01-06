@@ -56,7 +56,7 @@ function App() {
         />
       </div>
       <div className="container-center" id="profile-image">
-        <img src={profile} className="profile" alt="profile image" />
+        <img src={profile} className="profile" alt="profile image" width={300}/>
       </div>
       <div className="container-start" id="about-me">
         <Text preset="textWithBackground">About me</Text>
