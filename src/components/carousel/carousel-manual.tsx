@@ -14,15 +14,12 @@ type CarouselManualProps<T> = {
   renderItem: (item: T, index: number) => React.ReactNode;
   getKey: (item: T, index: number) => React.Key;
 
-  // acessibilidade / texto
   ariaLabelPrev?: string;
   ariaLabelNext?: string;
   ariaLabelDot?: (index: number) => string;
 
-  // opcional: começar em outro index
   initialIndex?: number;
 
-  // opcional: callback quando muda slide
   onIndexChange?: (index: number) => void;
 };
 
