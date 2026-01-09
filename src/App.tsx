@@ -13,7 +13,7 @@ import {
   professionalCareerData,
 } from "./components/utils/references";
 
-// import Button from "./components/button/button";
+import Button from "./components/button/button";
 import Experience from "./components/experience/experience";
 
 //utils
@@ -29,6 +29,7 @@ import profile from "./assets/profile/profile.jpeg";
 import linkedinIcon from "./assets/icons/linkedin.svg";
 import githubIcon from "./assets/icons/github.svg";
 import { RecommendationCarousel } from "./components/recommendations/recommendations";
+import { FeedbackModal } from "./components/feedback/feedback";
 
 function App() {
   return (
@@ -62,10 +63,15 @@ function App() {
                 <img src={githubIcon} alt="github Icon" width={36} />
               </a>
             </div>
-            {/* <Button>Lets Talk?</Button> */}
+            <a
+              href="https://wa.me/5521982663199"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Lets Talk?</Button>
+            </a>
           </div>
           <div className="container-center" id="experience">
-          
             <Experience
               src={codeIcon}
               position="Front-End Developer"
@@ -129,6 +135,7 @@ function App() {
             </Text>
             <CarouselAuto />
           </div>
+          <FeedbackModal />
         </main>
       </AppLayout>
     </>
