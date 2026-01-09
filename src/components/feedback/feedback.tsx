@@ -54,7 +54,7 @@ export function FeedbackModal({
     <>
       {!open && (
         <Hide onClick={() => setOpen(!open)}>
-          <Text style={{ color: "#000" }}>Click here to open feedback</Text>
+          <Text >Click here to open feedback</Text>
         </Hide>
       )}
       <Modal open={open} onClose={close} title="Quick feedback" width={"300px"}>

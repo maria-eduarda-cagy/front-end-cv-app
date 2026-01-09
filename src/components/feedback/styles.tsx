@@ -83,18 +83,22 @@ export const Hide = styled.div`
   position: fixed;
   bottom: 0;
   right: 0;
-  background: #fff;
   width: 250px;
   height: 40px;
   border-radius: 10px 10px 0 0;
 
-  background: #fff;
+  backdrop-filter: blur(10px);
+  background: rgba(10, 10, 14, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 
-  box-shadow: 
-  -4px -4px 14px rgba(255, 255, 255, 0.09);
+  box-shadow: 10px 10px 27px -2px rgba(53, 65, 177, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
 
   cursor: pointer;
+
+  :hover {
+    background: #fff;
+  }
 `;
