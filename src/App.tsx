@@ -6,7 +6,7 @@ import { AppLayout } from "./Layout";
 
 //components
 import { Text } from "./components/text/text";
-import { CarouselAuto } from "./components/carousel/carousel-autamate";
+import { CarouselAuto } from "./components/carousel/carousel-automate";
 import { MyCareerCarousel } from "./components/my-career/my-career-carousel";
 import {
   academicCareerData,
