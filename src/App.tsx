@@ -29,6 +29,7 @@ import profile from "./assets/profile/profile.jpeg";
 import linkedinIcon from "./assets/icons/linkedin.svg";
 import githubIcon from "./assets/icons/github.svg";
 import { RecommendationCarousel } from "./components/recommendations/recommendations";
+import { PersonalProjects } from "./components/personal-projects/personal-projects";
 
 function App() {
   return (
@@ -88,7 +89,6 @@ function App() {
                   src={profile}
                   className="profile"
                   alt="profile image"
-                  width={300}
                 />
               </a>
             </div>
@@ -121,6 +121,10 @@ function App() {
           <div className="container-start" id="recommendations">
             <Text preset="textWithBackground">Recommendations</Text>
             <RecommendationCarousel />
+          </div>
+          <div className="container-start" id="personal-projects">
+            <Text preset="textWithBackground">Personal Projects</Text>
+            <PersonalProjects />
           </div>
           <div className="container-start" id="skills">
             <Text preset="textWithBackground">Skills</Text>
