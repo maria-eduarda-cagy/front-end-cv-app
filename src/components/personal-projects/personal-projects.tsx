@@ -26,7 +26,7 @@ const projects: Project[] = [
   {
     title: "District DMV Lookup",
     label: "districdmv.mariacagy.com.br",
-    href: "https://districdmv.mariacagy.com.br",
+    href: "https://districtdmv.mariacagy.com.br",
     desc: "Lookup legislative districts in DC/MD/VA from an address, visualize boundaries on an interactive map, and generate an offices-only sample ballot (optional downballot).",
     tech: "Vanilla JS • Leaflet • Supabase • PostGIS • Python",
   },
