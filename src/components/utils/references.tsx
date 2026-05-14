@@ -10,6 +10,7 @@ import git from "../../assets/icons/git.svg";
 import figma from "../../assets/icons/figma.svg";
 import jamisImage from "../../assets/recomendations/jamis-profile.jpeg";
 import lethiciaImage from "../../assets/recomendations/lethicia-profile.jpeg";
+import diegoImage from "../../assets/recomendations/diego-profile.jpeg";
 import {
   getYearsAndMonthsFrom,
   type CareerExperience,
@@ -200,5 +201,16 @@ She is undoubtedly a professional I would recommend to any team that values resp
     content: `Maria is a proactive, friendly, responsible, and practical person. We shared the same work environment for a year and a half and exchanged a great deal of knowledge during that time.
 
 I am very happy to see how she has grown and reached new goals in her career. She truly deserves it.`,
+  },
+  {
+    id: "diego-do-rosario-neves",
+    name: "Diego do Rosario Neves",
+    role: "Frontend Developer | Web Designer | Git | Figma @Brazilian Navy",
+    relationship: "Directly supervised me",
+    date: "2026-04-01",
+    photo: diegoImage,
+    content: `Working with Maria Eduarda means having a competent professional who knows how to carry out her responsibilities in the best possible way. Maria Eduarda was my intern, and during that period I was able to observe her excellent attitude at work, always striving to deliver her best in the tasks assigned to her.
+
+Her drive to seek new knowledge to add value to her work shows her desire to stay up to date and deserves special recognition. I strongly recommend her, as she will add a lot of value to any company.`,
   },
 ];
