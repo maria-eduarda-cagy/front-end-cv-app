@@ -135,7 +135,7 @@ html {
   will-change: filter;
   transition: filter 300ms;
   border-radius: 10em;
-  border: 13px solid #fff;
+  border: 13px solid var(--color-text);
   will-change: filter;
   transition: filter 300ms;
 }
@@ -166,5 +166,5 @@ html {
 }
 
 .read-the-docs {
-  color: #888;
+  color: var(--color-text-muted);
 }

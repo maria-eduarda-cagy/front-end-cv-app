@@ -6,8 +6,8 @@ export const HeaderWrapper = styled.header`
   top: 0;
   z-index: 50;
   backdrop-filter: blur(10px);
-  background: rgba(10, 10, 14, 0.7);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--color-bg-elevated);
+  border-bottom: 1px solid var(--color-header-border);
 `;
 
 export const HeaderInner = styled.div`
@@ -26,11 +26,17 @@ export const HeaderInner = styled.div`
 `;
 
 export const Brand = styled.a`
-  color: #fff;
+  color: var(--color-text);
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.3px;
   white-space: nowrap;
+`;
+
+export const HeaderControls = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
 export const FooterBackground = styled.footer`
@@ -38,7 +44,7 @@ export const FooterBackground = styled.footer`
   height: 84px;
   margin-top: 2rem;
 
-  background-color: #7b4ae210;
+  background-color: var(--color-footer-bg);
 
   display: flex;
   flex-direction: column;
@@ -80,9 +86,9 @@ export const Nav = styled.nav<{
     max-height: ${$open ? "320px" : "0"};
     overflow: hidden;
     transition: max-height 240ms ease;
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-top: 1px solid var(--color-header-border);
         position: absolute;
-    background: rgba(10, 10, 14);
+    background: var(--color-bg);
     width: 100%;
 }
 
@@ -93,7 +99,7 @@ export const Nav = styled.nav<{
 `;
 
 export const NavLink = styled.a`
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--color-text-muted);
   text-decoration: none;
   font-size: 0.95rem;
   padding: 0.35rem 0.55rem;
@@ -101,8 +107,8 @@ export const NavLink = styled.a`
   white-space: nowrap;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.08);
-    color: #fff;
+    background: var(--color-surface);
+    color: var(--color-text);
   }
 `;
 
@@ -112,7 +118,7 @@ export const MobileLink = styled(NavLink)`
   border-radius: 0;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.06);
+    background: var(--color-surface);
   }
 `;
 
@@ -122,12 +128,12 @@ export const BurgerButton = styled.button`
   height: 42px;
   border: 0;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--color-surface);
   cursor: pointer;
   padding: 10px;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--color-surface-hover);
   }
 
   @media (max-width: 768px) {
@@ -143,7 +149,7 @@ export const BurgerBar = styled.span<{ $open: boolean; $index: number }>`
   display: block;
   height: 2px;
   width: 20px;
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--color-text);
   border-radius: 5px;
   transition: transform 180ms ease, opacity 180ms ease;
 

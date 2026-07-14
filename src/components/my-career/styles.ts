@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MyCareerContainer = styled.div`
   display: flex;
   flex-direction: column;
-  border: 1px solid #7b4ae280;
+  border: 1px solid var(--color-accent-80);
   border-radius: 16px;
   padding: 10px;
   position: relative;
@@ -13,9 +13,9 @@ export const MyCareerContainer = styled.div`
 export const Button = styled.button`
   padding: 0.2rem 0.5rem;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background: rgba(255, 255, 255, 0.06);
-  color: #fff;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
   cursor: pointer;
 
   width: 24px;

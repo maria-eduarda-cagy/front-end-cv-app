@@ -8,7 +8,7 @@ export const ExperienceStyled = styled.div`
   justify-self: center;
   gap: 16px;
   margin-top: 32px;
-  border: 1px solid #7b4ae280;
+  border: 1px solid var(--color-accent-80);
   border-radius: 16px;
   padding: 24px;
   width: 244px;

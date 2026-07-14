@@ -1,11 +1,8 @@
-import {
-  experienceAsFrontendDev,
-  experienceWithReactAndTS,
-  skillsData,
-} from "./references";
+import { skillsData } from "./references";
+import type { TFunction } from "i18next";
 
 //types
-type TimeDiff = {
+export type TimeDiff = {
   years: number;
   months: number;
 };
@@ -15,13 +12,10 @@ type Skill = {
   name: string;
 };
 export type CareerExperience = {
-  title: string;
+  translationKey: string;
+  section: "professional" | "academic";
   href?: string;
   period: string;
-  bullets: Array<{
-    highlight: string;
-    text: string;
-  }>;
 };
 
 export type Recommendation = {
@@ -30,7 +24,7 @@ export type Recommendation = {
   role: string;
   relationship: string;
   date: string;
-  photo: string; 
+  photo: string;
   content: string;
 };
 
@@ -58,15 +52,20 @@ export function getYearsAndMonthsFrom(
   return { years, months };
 }
 
-function experienceStr({ years, months }: TimeDiff): string {
-  if (years === 0 && months === 0) return "Less than a month";
+// Formats a TimeDiff using i18next pluralization, so "1 year" vs "2 years"
+// (and their pt-BR/es equivalents) are handled per-locale instead of English-only string building.
+export function formatExperienceDuration(
+  t: TFunction,
+  { years, months }: TimeDiff
+): string {
+  if (years === 0 && months === 0) return t("duration.lessThanMonth");
 
-  const yearPart = years > 0 ? `${years} year${years === 1 ? "" : "s"}` : "";
+  const yearPart = years > 0 ? t("duration.year", { count: years }) : "";
+  const monthPart = months > 0 ? t("duration.month", { count: months }) : "";
 
-  const monthPart =
-    months > 0 ? `${months} month${months === 1 ? "" : "s"}` : "";
-
-  if (yearPart && monthPart) return `${yearPart} and ${monthPart}`;
+  if (yearPart && monthPart) {
+    return `${yearPart} ${t("duration.and")} ${monthPart}`;
+  }
   return yearPart || monthPart;
 }
 
@@ -79,11 +78,3 @@ function getSkillsData(): Skill[] {
 
 //exports
 export const skills = getSkillsData();
-
-export const experienceAsFrontendDevStr = experienceStr(
-  experienceAsFrontendDev
-);
-
-export const experienceWithReactAndTSStr = experienceStr(
-  experienceWithReactAndTS
-);

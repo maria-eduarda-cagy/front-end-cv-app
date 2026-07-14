@@ -1,0 +1,200 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "career": "Career",
+    "recommendations": "Recommendations",
+    "skills": "Skills"
+  },
+  "header": {
+    "brand": "Maria Cagy",
+    "goToTop": "Go to top",
+    "toggleNav": "Toggle navigation menu"
+  },
+  "hero": {
+    "role": "Front-end Developer",
+    "stack": "React • TypeScript • Next.JS"
+  },
+  "contact": {
+    "linkedinAlt": "LinkedIn icon",
+    "githubAlt": "GitHub icon"
+  },
+  "about": {
+    "title": "About me",
+    "body": "I’m a frontend-focused full-stack developer who enjoys turning ideas into clear and reliable digital experiences. I work mainly with React, TypeScript and Next.js, focusing on clean, accessible and performant interfaces. I’m currently a Computer Science student, which strengthens my technical foundation and problem-solving skills. At Voting Buddy, I collaborate closely with product, design and engineering teams. I’m also comfortable working across the stack with Node.js, Strapi and Python. I’m motivated by building products that feel simple, fast and intuitive to use."
+  },
+  "experience": {
+    "frontendPosition": "Front-End Developer",
+    "frontendUsing": "React and TypeScript",
+    "developerPosition": "Developer",
+    "asSuffix": "as",
+    "usingPrefix": "using"
+  },
+  "duration": {
+    "lessThanMonth": "Less than a month",
+    "year_one": "{{count}} year",
+    "year_other": "{{count}} years",
+    "month_one": "{{count}} month",
+    "month_other": "{{count}} months",
+    "and": "and"
+  },
+  "career": {
+    "title": "My Career",
+    "academicTitle": "Academic Area",
+    "prevAria": "Previous experience",
+    "nextAria": "Next experience",
+    "dotAria": "Go to experience {{index}}",
+    "professional": {
+      "votingBuddy": {
+        "title": "Voting Buddy",
+        "bullets": [
+          {
+            "highlight": "Actively participated in the implementation of the official website votingbuddy.com",
+            "text": "from structure to launch, using React (front-end) and Strapi (back-end) to ensure scalability and easy maintenance."
+          },
+          {
+            "highlight": "Developed integration with external and internal APIs",
+            "text": "automating data collection and processing for AI-powered features and user behavior analysis."
+          },
+          {
+            "highlight": "Helped build a booth at the Web Summit Rio 2025",
+            "text": "representing the company with machine learning and AI-based civic engagement solutions."
+          },
+          {
+            "highlight": "Collaborated with design, data, and product teams",
+            "text": "to ensure visual consistency, accessibility, and responsive performance across multiple devices."
+          },
+          {
+            "highlight": "Conducted continuous maintenance and iterative improvements",
+            "text": "optimizing website load time and fixing bugs based on user feedback and automated testing."
+          }
+        ]
+      },
+      "brazilianNavy": {
+        "title": "Brazilian Navy",
+        "bullets": [
+          {
+            "highlight": "Developed interactive dashboards using Qlik Sense",
+            "text": "providing management with strategic insights and data-driven decision support."
+          },
+          {
+            "highlight": "Maintained and updated internal web systems",
+            "text": "with a focus on improving user experience and interface performance."
+          },
+          {
+            "highlight": "Supported the digitalization of internal processes",
+            "text": "contributing to automation and reduction of manual operational tasks."
+          },
+          {
+            "highlight": "Developed a help website for internal users",
+            "text": "to assist employees in navigating systems and understanding internal procedures."
+          }
+        ]
+      },
+      "fiocruz": {
+        "title": "Oswaldo Cruz Foundation (FIOCRUZ)",
+        "bullets": [
+          {
+            "highlight": "Worked in the production line of biopharmaceuticals and AstraZeneca's COVID-19 vaccine",
+            "text": "strictly following Good Manufacturing Practices (GMP) and ALCOA++ principles."
+          },
+          {
+            "highlight": "Performed quality control in critical production stages",
+            "text": "ensuring traceability, regulatory compliance, and data integrity."
+          },
+          {
+            "highlight": "Managed technical documentation and operational protocols",
+            "text": "supporting successful audits and compliance with national and international regulations."
+          }
+        ]
+      }
+    },
+    "academic": {
+      "bachelors": {
+        "title": "Bachelor’s Degree",
+        "bullets": [
+          {
+            "highlight": "Currently pursuing a Bachelor’s degree in Computer Science",
+            "text": "with a strong focus on software development, problem-solving and computational thinking."
+          },
+          {
+            "highlight": "Built a solid foundation in programming and computer science fundamentals",
+            "text": "including algorithms, data structures, software architecture and web technologies."
+          },
+          {
+            "highlight": "Applied academic knowledge to real-world projects",
+            "text": "connecting theoretical concepts with practical frontend and full-stack development."
+          },
+          {
+            "highlight": "Developed strong analytical and logical reasoning skills",
+            "text": "supporting efficient debugging, system design and scalable solutions."
+          }
+        ]
+      },
+      "chemistry": {
+        "title": "Technical Degree in Chemistry",
+        "bullets": [
+          {
+            "highlight": "Completed a Technical Degree in Chemistry",
+            "text": "with a strong emphasis on laboratory practices, data accuracy and process control."
+          },
+          {
+            "highlight": "Developed discipline and attention to detail",
+            "text": "through strict adherence to procedures, documentation standards and quality requirements."
+          },
+          {
+            "highlight": "Gained experience working with regulated environments",
+            "text": "which shaped a strong sense of responsibility, precision and reliability."
+          }
+        ]
+      },
+      "development": {
+        "title": "Academic & Professional Development",
+        "bullets": [
+          {
+            "highlight": "Participated in international technology events",
+            "text": "such as Web Summit, engaging with topics related to AI, software engineering and product development."
+          },
+          {
+            "highlight": "Continuously invested in self-directed learning",
+            "text": "through online courses, technical documentation and hands-on experimentation."
+          },
+          {
+            "highlight": "Strengthened communication and collaboration skills",
+            "text": "by working in multidisciplinary and multicultural environments."
+          }
+        ]
+      }
+    }
+  },
+  "recommendations": {
+    "title": "Recommendations",
+    "prevAria": "Previous recommendation",
+    "nextAria": "Next recommendation",
+    "dotAria": "Go to recommendation {{index}}"
+  },
+  "projects": {
+    "title": "Personal Projects",
+    "webGame": {
+      "title": "Web Game",
+      "desc": "Casual web game for the browser, focused on quick sessions, simple controls, and a responsive experience on desktop and mobile."
+    },
+    "orbisFinance": {
+      "title": "Orbis Finance",
+      "desc": "Financial dashboard for metrics visualization with charts and tables, basic filters, and emphasis on clarity and fast reading."
+    },
+    "districtDmv": {
+      "title": "District DMV Lookup",
+      "desc": "Lookup legislative districts in DC/MD/VA from an address, visualize boundaries on an interactive map, and generate an offices-only sample ballot (optional downballot)."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technologies I use to build amazing apps:"
+  },
+  "footer": {
+    "copyright": "Copyright © Maria Cagy · {{year}}",
+    "linkedinAlt": "LinkedIn icon",
+    "githubAlt": "GitHub icon"
+  }
+}
