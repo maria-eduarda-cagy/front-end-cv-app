@@ -13,6 +13,8 @@
   },
   "hero": {
     "role": "Desarrolladora Front-end",
+    "student": "Estudiante de Ciencias de la Computación",
+    "company": "Voting Buddy - Desarrolladora Front-end",
     "stack": "React • TypeScript • Next.JS"
   },
   "contact": {
