@@ -21,7 +21,7 @@ export default function Experience(props: ExperienceProps) {
         <Text preset="text">
           {duration} {t("experience.asSuffix")}
         </Text>
-        <Text preset="subtitle">{props.position}</Text>
+        <Text preset="subtitle" style={{ textAlign: "center" }}>{props.position}</Text>
         {props.using && (
           <Text preset="subtext">
             {t("experience.usingPrefix")} {props.using}

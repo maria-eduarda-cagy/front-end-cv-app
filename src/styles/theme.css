@@ -23,6 +23,10 @@
   --color-surface: rgba(10, 10, 20, 0.05);
   --color-surface-hover: rgba(10, 10, 20, 0.09);
   --color-footer-bg: #7b4ae214;
+
+  /* linkedin.svg/github.svg are drawn with a white fill for the dark
+     theme; invert them in light mode so they stay visible on light backgrounds. */
+  --icon-filter: invert(1);
 }
 
 :root[data-theme="dark"] {
@@ -43,4 +47,6 @@
   --color-surface: rgba(255, 255, 255, 0.06);
   --color-surface-hover: rgba(255, 255, 255, 0.1);
   --color-footer-bg: #7b4ae210;
+
+  --icon-filter: none;
 }

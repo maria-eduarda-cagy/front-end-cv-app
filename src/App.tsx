@@ -50,7 +50,7 @@ function App() {
             <div className="column-container">
               <Text preset="text">{t("hero.role")}</Text>
               <Text preset="subtext">{t("hero.student")}</Text>
-              <Text preset="subtext">{t("hero.company")}</Text>
+              
               <Text preset="subtext">{t("hero.stack")}</Text>
             </div>
           </div>

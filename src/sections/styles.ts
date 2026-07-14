@@ -59,6 +59,10 @@ export const FooterBackground = styled.footer`
   .mobile-header-icons {
     display: flex;
     gap: 1rem;
+
+    img {
+      filter: var(--icon-filter);
+    }
   }
 `;
 

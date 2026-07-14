@@ -121,6 +121,10 @@ html {
   width: 100%;
   justify-content: center;
 
+  img {
+    filter: var(--icon-filter);
+  }
+
   a:hover {
     opacity: 0.5;
   }
