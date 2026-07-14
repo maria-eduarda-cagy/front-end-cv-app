@@ -12,10 +12,10 @@ export const ProjectCard = styled.a`
   flex-direction: column;
   gap: 4px;
   padding: 12px 16px;
-  border: 1px solid #7b4ae280;
+  border: 1px solid var(--color-accent-80);
   border-radius: 12px;
   width:100%;
-  color: #fff;
+  color: var(--color-text);
   text-decoration: none;
   transition: transform 160ms ease, opacity 160ms ease;
   will-change: transform;
@@ -24,11 +24,11 @@ export const ProjectCard = styled.a`
   &:hover {
     opacity: 0.85;
     transform: translateY(-2px);
-    color: #fff;
+    color: var(--color-text);
   }
 
   &:visited {
-    color: #fff;
+    color: var(--color-text);
   }
 
   .title {

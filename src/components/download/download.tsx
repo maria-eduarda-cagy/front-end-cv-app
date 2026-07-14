@@ -11,7 +11,7 @@ export default function Download() {
         cursor: "pointer",
       }}
     >
-      <Text preset="text" style={{ color: "#7B4AE2", opacity: "0.7" }}>
+      <Text preset="text" style={{ color: "var(--color-accent)", opacity: "0.7" }}>
         Download CV
       </Text>
       <img src={download} alt="avatar" width={20} height={20} />

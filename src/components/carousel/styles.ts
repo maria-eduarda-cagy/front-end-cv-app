@@ -35,7 +35,7 @@ export const Dot = styled.button<{ $active: boolean }>`
   border: none;
 
   background: ${({ $active }) =>
-    $active ? "#7b4ae280" : "rgba(255, 255, 255, 0.35)"};
+    $active ? "var(--color-accent-80)" : "var(--color-surface-hover)"};
 
   transition: all 0.25s ease;
   cursor: pointer;
@@ -59,9 +59,9 @@ export const ArrowButton = styled.button`
   align-items: center;
   justify-content: center;
   padding: 0.6rem 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background: rgba(255, 255, 255, 0.06);
-  color: #fff;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
   cursor: pointer;
 
   &:disabled {

@@ -1,0 +1,200 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "career": "Carrera",
+    "recommendations": "Recomendaciones",
+    "skills": "Habilidades"
+  },
+  "header": {
+    "brand": "Maria Cagy",
+    "goToTop": "Ir arriba",
+    "toggleNav": "Alternar menú de navegación"
+  },
+  "hero": {
+    "role": "Desarrolladora Front-end",
+    "stack": "React • TypeScript • Next.JS"
+  },
+  "contact": {
+    "linkedinAlt": "Icono de LinkedIn",
+    "githubAlt": "Icono de GitHub"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "body": "Soy una desarrolladora full-stack enfocada en front-end, apasionada por convertir ideas en experiencias digitales claras y confiables. Trabajo principalmente con React, TypeScript y Next.js, priorizando interfaces limpias, accesibles y de buen rendimiento. Actualmente soy estudiante de Ciencias de la Computación, lo que fortalece mi base técnica y mi capacidad de resolución de problemas. En Voting Buddy, colaboro estrechamente con los equipos de producto, diseño e ingeniería. También me siento cómoda trabajando en toda la pila con Node.js, Strapi y Python. Me motiva construir productos simples, rápidos e intuitivos de usar."
+  },
+  "experience": {
+    "frontendPosition": "Desarrolladora Front-End",
+    "frontendUsing": "React y TypeScript",
+    "developerPosition": "Desarrolladora",
+    "asSuffix": "como",
+    "usingPrefix": "usando"
+  },
+  "duration": {
+    "lessThanMonth": "Menos de un mes",
+    "year_one": "{{count}} año",
+    "year_other": "{{count}} años",
+    "month_one": "{{count}} mes",
+    "month_other": "{{count}} meses",
+    "and": "y"
+  },
+  "career": {
+    "title": "Mi Carrera",
+    "academicTitle": "Área Académica",
+    "prevAria": "Experiencia anterior",
+    "nextAria": "Siguiente experiencia",
+    "dotAria": "Ir a la experiencia {{index}}",
+    "professional": {
+      "votingBuddy": {
+        "title": "Voting Buddy",
+        "bullets": [
+          {
+            "highlight": "Participé activamente en la implementación del sitio oficial votingbuddy.com",
+            "text": "desde la estructura hasta el lanzamiento, usando React (front-end) y Strapi (back-end) para garantizar escalabilidad y fácil mantenimiento."
+          },
+          {
+            "highlight": "Desarrollé integraciones con APIs externas e internas",
+            "text": "automatizando la recolección y el procesamiento de datos para funciones basadas en IA y análisis del comportamiento del usuario."
+          },
+          {
+            "highlight": "Ayudé a montar un stand en la Web Summit Río 2025",
+            "text": "representando a la empresa con soluciones de participación cívica basadas en machine learning e IA."
+          },
+          {
+            "highlight": "Colaboré con los equipos de diseño, datos y producto",
+            "text": "para garantizar consistencia visual, accesibilidad y rendimiento responsivo en múltiples dispositivos."
+          },
+          {
+            "highlight": "Realicé mantenimiento continuo y mejoras iterativas",
+            "text": "optimizando el tiempo de carga del sitio y corrigiendo errores según los comentarios de los usuarios y pruebas automatizadas."
+          }
+        ]
+      },
+      "brazilianNavy": {
+        "title": "Marina de Brasil",
+        "bullets": [
+          {
+            "highlight": "Desarrollé paneles interactivos usando Qlik Sense",
+            "text": "brindando a la gerencia información estratégica y apoyo a la toma de decisiones basada en datos."
+          },
+          {
+            "highlight": "Mantuve y actualicé sistemas web internos",
+            "text": "con enfoque en mejorar la experiencia del usuario y el rendimiento de la interfaz."
+          },
+          {
+            "highlight": "Apoyé la digitalización de procesos internos",
+            "text": "contribuyendo a la automatización y reducción de tareas operativas manuales."
+          },
+          {
+            "highlight": "Desarrollé un sitio de ayuda para usuarios internos",
+            "text": "para asistir a los empleados a navegar los sistemas y entender los procedimientos internos."
+          }
+        ]
+      },
+      "fiocruz": {
+        "title": "Fundación Oswaldo Cruz (FIOCRUZ)",
+        "bullets": [
+          {
+            "highlight": "Trabajé en la línea de producción de biofármacos y de la vacuna de AstraZeneca contra la COVID-19",
+            "text": "siguiendo estrictamente las Buenas Prácticas de Manufactura (BPM) y los principios ALCOA++."
+          },
+          {
+            "highlight": "Realicé control de calidad en etapas críticas de producción",
+            "text": "garantizando trazabilidad, cumplimiento regulatorio e integridad de los datos."
+          },
+          {
+            "highlight": "Gestioné documentación técnica y protocolos operativos",
+            "text": "apoyando auditorías exitosas y el cumplimiento de regulaciones nacionales e internacionales."
+          }
+        ]
+      }
+    },
+    "academic": {
+      "bachelors": {
+        "title": "Licenciatura",
+        "bullets": [
+          {
+            "highlight": "Actualmente cursando la Licenciatura en Ciencias de la Computación",
+            "text": "con un fuerte enfoque en desarrollo de software, resolución de problemas y pensamiento computacional."
+          },
+          {
+            "highlight": "Construí una base sólida en programación y fundamentos de ciencias de la computación",
+            "text": "incluyendo algoritmos, estructuras de datos, arquitectura de software y tecnologías web."
+          },
+          {
+            "highlight": "Apliqué conocimiento académico en proyectos reales",
+            "text": "conectando conceptos teóricos con desarrollo front-end y full-stack en la práctica."
+          },
+          {
+            "highlight": "Desarrollé fuertes habilidades de razonamiento analítico y lógico",
+            "text": "apoyando la depuración eficiente, el diseño de sistemas y soluciones escalables."
+          }
+        ]
+      },
+      "chemistry": {
+        "title": "Técnico en Química",
+        "bullets": [
+          {
+            "highlight": "Completé el Técnico en Química",
+            "text": "con un fuerte énfasis en prácticas de laboratorio, precisión de datos y control de procesos."
+          },
+          {
+            "highlight": "Desarrollé disciplina y atención al detalle",
+            "text": "mediante el estricto cumplimiento de procedimientos, estándares de documentación y requisitos de calidad."
+          },
+          {
+            "highlight": "Gané experiencia trabajando en entornos regulados",
+            "text": "lo que forjó un fuerte sentido de responsabilidad, precisión y confiabilidad."
+          }
+        ]
+      },
+      "development": {
+        "title": "Desarrollo Académico y Profesional",
+        "bullets": [
+          {
+            "highlight": "Participé en eventos internacionales de tecnología",
+            "text": "como la Web Summit, abordando temas relacionados con IA, ingeniería de software y desarrollo de producto."
+          },
+          {
+            "highlight": "Invertí continuamente en aprendizaje autodirigido",
+            "text": "a través de cursos en línea, documentación técnica y experimentación práctica."
+          },
+          {
+            "highlight": "Fortalecí habilidades de comunicación y colaboración",
+            "text": "trabajando en entornos multidisciplinarios y multiculturales."
+          }
+        ]
+      }
+    }
+  },
+  "recommendations": {
+    "title": "Recomendaciones",
+    "prevAria": "Recomendación anterior",
+    "nextAria": "Siguiente recomendación",
+    "dotAria": "Ir a la recomendación {{index}}"
+  },
+  "projects": {
+    "title": "Proyectos Personales",
+    "webGame": {
+      "title": "Web Game",
+      "desc": "Juego casual para navegador, enfocado en sesiones rápidas, controles simples y una experiencia responsiva en escritorio y móvil."
+    },
+    "orbisFinance": {
+      "title": "Orbis Finance",
+      "desc": "Panel financiero para visualización de métricas con gráficos y tablas, filtros básicos y énfasis en claridad y lectura rápida."
+    },
+    "districtDmv": {
+      "title": "District DMV Lookup",
+      "desc": "Busca distritos legislativos en DC/MD/VA a partir de una dirección, visualiza los límites en un mapa interactivo y genera una boleta de muestra solo con cargos ejecutivos (downballot opcional)."
+    }
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "Tecnologías que uso para construir aplicaciones increíbles:"
+  },
+  "footer": {
+    "copyright": "Copyright © Maria Cagy · {{year}}",
+    "linkedinAlt": "Icono de LinkedIn",
+    "githubAlt": "Icono de GitHub"
+  }
+}

@@ -1,25 +1,30 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   HeaderWrapper,
   HeaderInner,
   Brand,
+  HeaderControls,
   Nav,
   NavLink,
   MobileLink,
   BurgerButton,
   BurgerBar,
 } from "../styles";
-
-const navItems = [
-  { label: "Home", href: "#avatar" },
-  { label: "About", href: "#about-me" },
-  { label: "Career", href: "#my-career" },
-  { label: "Recommendations", href: "#recommendations" },
-  { label: "Skills", href: "#skills" },
-];
+import { ThemeToggle } from "../../components/theme-toggle/theme-toggle";
+import { LanguageSwitcher } from "../../components/language-switcher/language-switcher";
 
 export default function Header() {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
+
+  const navItems = [
+    { label: t("nav.home"), href: "#avatar" },
+    { label: t("nav.about"), href: "#about-me" },
+    { label: t("nav.career"), href: "#my-career" },
+    { label: t("nav.recommendations"), href: "#recommendations" },
+    { label: t("nav.skills"), href: "#skills" },
+  ];
 
   useEffect(() => {
     const onResize = () => {
@@ -41,8 +46,8 @@ export default function Header() {
   return (
     <HeaderWrapper>
       <HeaderInner>
-        <Brand href="#avatar" aria-label="Go to top">
-          Maria Cagy
+        <Brand href="#avatar" aria-label={t("header.goToTop")}>
+          {t("header.brand")}
         </Brand>
 
         {/* Desktop navigation */}
@@ -54,29 +59,25 @@ export default function Header() {
           ))}
         </Nav>
 
-        <BurgerButton
-          onClick={() => setOpen((v) => !v)}
-          aria-label="Toggle navigation menu"
-          aria-expanded={open}
-          aria-controls="mobile-nav"
-          type="button"
-        >
-          {[0, 1, 2].map((index) => (
-            <BurgerBar
-              key={index}
-              $open={open}
-              $index={index}
-            />
-          ))}
-        </BurgerButton>
+        <HeaderControls>
+          <LanguageSwitcher />
+          <ThemeToggle />
+
+          <BurgerButton
+            onClick={() => setOpen((v) => !v)}
+            aria-label={t("header.toggleNav")}
+            aria-expanded={open}
+            aria-controls="mobile-nav"
+            type="button"
+          >
+            {[0, 1, 2].map((index) => (
+              <BurgerBar key={index} $open={open} $index={index} />
+            ))}
+          </BurgerButton>
+        </HeaderControls>
       </HeaderInner>
 
-      <Nav
-        id="mobile-nav"
-        $variant="mobile"
-        $open={open}
-        aria-label="Mobile"
-      >
+      <Nav id="mobile-nav" $variant="mobile" $open={open} aria-label="Mobile">
         {navItems.map((item) => (
           <MobileLink
             key={item.href}

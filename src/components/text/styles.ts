@@ -47,8 +47,8 @@ export const StyledText = styled.span<StyledTextProps>`
     props.variant === "textWithBackground" &&
     css`
       font-size: 16px;
-      background-color: #7b4ae230;
-      color: #fff;
+      background-color: var(--color-accent-30);
+      color: var(--color-text);
       font-weight: 800;
       padding: 4px 8px;
       border-radius: 8px;
