@@ -28,4 +28,12 @@ i18n
     },
   });
 
+// Keeps <html lang> in sync with the selected language — screen readers use
+// it to pick the right pronunciation/voice, so it must match the visible text.
+function syncHtmlLang(lng: string) {
+  document.documentElement.lang = lng;
+}
+syncHtmlLang(i18n.resolvedLanguage ?? "en");
+i18n.on("languageChanged", syncHtmlLang);
+
 export default i18n;

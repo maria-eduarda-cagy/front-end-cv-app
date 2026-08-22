@@ -2,197 +2,124 @@
   "nav": {
     "home": "Início",
     "about": "Sobre",
-    "career": "Carreira",
+    "stack": "Stack",
+    "experience": "Experiência",
+    "projects": "Projetos",
     "recommendations": "Recomendações",
-    "skills": "Habilidades"
+    "contact": "Contato"
   },
   "header": {
-    "brand": "Maria Cagy",
+    "brand": "maria.dev",
     "goToTop": "Ir para o topo",
     "toggleNav": "Alternar menu de navegação"
   },
   "hero": {
-    "role": "Desenvolvedora Front-end",
-    "student": "Estudante de Ciência da Computação",
-    "company": "Voting Buddy - Desenvolvedora Front-end",
-    "stack": "React • TypeScript • Next.JS"
+    "badge": "Disponível para novas oportunidades",
+    "headline": "Eu construo produtos <hl1>rápidos</hl1> e <hl2>confiáveis</hl2> para a web.",
+    "subheadline": "Desenvolvedora Full Stack com 3 anos de experiência, trabalhando remotamente com um time de produto dos EUA — de interfaces em React às APIs e automações por trás delas.",
+    "ctaProjects": "Ver meu trabalho",
+    "ctaContact": "Fale comigo"
   },
   "contact": {
-    "linkedinAlt": "Ícone do LinkedIn",
-    "githubAlt": "Ícone do GitHub"
+    "eyebrow": "Contato",
+    "title": "Vamos construir algo juntos",
+    "intro": "Aberta a novas oportunidades full-time com times que trabalham em inglês. Baseada no Brasil, confortável com sobreposição de horário dos EUA.",
+    "status": "Disponível para novas oportunidades",
+    "typeLabel": "Tipo",
+    "type": "Full-time, Remoto",
+    "locationLabel": "Localização",
+    "location": "Rio de Janeiro, Brasil (UTC-3)",
+    "responseLabel": "Tempo de resposta",
+    "response": "Geralmente em até 24h",
+    "emailLabel": "E-mail",
+    "copyEmail": "Copiar e-mail",
+    "emailCopied": "Copiado!",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
   },
   "about": {
+    "eyebrow": "Sobre",
     "title": "Sobre mim",
-    "body": "Sou uma desenvolvedora full-stack com foco em front-end, apaixonada por transformar ideias em experiências digitais claras e confiáveis. Trabalho principalmente com React, TypeScript e Next.js, priorizando interfaces limpas, acessíveis e performáticas. Atualmente sou estudante de Ciência da Computação, o que fortalece minha base técnica e minha capacidade de resolver problemas. Na Voting Buddy, colaboro de perto com as equipes de produto, design e engenharia. Também me sinto confortável trabalhando em toda a stack com Node.js, Strapi e Python. Sou motivada a construir produtos simples, rápidos e intuitivos de usar."
+    "body": "Sou desenvolvedora Full Stack com 3 anos de experiência, focada em engenharia front-end com React, Next.js e TypeScript, e confortável em expandir para APIs, bancos de dados e automação em Python. Trabalho remotamente com um time de produto dos EUA, colaborando diariamente em inglês entre produto, design, backend e dados — entregando aplicações de produção de ponta a ponta. Na Voting Buddy, mantenho uma biblioteca de componentes compartilhada usada em 20 funcionalidades e sou responsável pelo fluxo de busca por endereço, da UI à integração com a API. Estou concluindo o bacharelado em Ciência da Computação em dezembro de 2026, o que continua fortalecendo os fundamentos por trás do código que entrego.",
+    "stats": {
+      "experience": "3 anos de experiência",
+      "remote": "Remoto / time dos EUA",
+      "degree": "Formatura em Dez/2026",
+      "location": "Rio de Janeiro, BR"
+    },
+    "cards": {
+      "cleanCode": {
+        "title": "Código limpo",
+        "body": "Bibliotecas de componentes compartilhadas, padrões consistentes, code reviews — construído para ser mantido por um time, não só entregue uma vez."
+      },
+      "dataAutomation": {
+        "title": "Dados e automação",
+        "body": "Scripts em Python que substituem trabalho manual e repetitivo — de buscas de registros de políticos a verificações de status automatizadas."
+      },
+      "shipping": {
+        "title": "Entrega em produção",
+        "body": "Não só protótipos: usuários reais, deploys reais, no Vercel e Docker, com CI/CD no processo."
+      }
+    }
   },
   "experience": {
-    "frontendPosition": "Desenvolvedora Front-End",
-    "frontendUsing": "React e TypeScript",
-    "developerPosition": "Desenvolvedora",
-    "asSuffix": "como",
-    "usingPrefix": "usando"
-  },
-  "duration": {
-    "lessThanMonth": "Menos de um mês",
-    "year_one": "{{count}} ano",
-    "year_other": "{{count}} anos",
-    "month_one": "{{count}} mês",
-    "month_other": "{{count}} meses",
-    "and": "e"
-  },
-  "career": {
-    "title": "Minha Carreira",
-    "academicTitle": "Área Acadêmica",
-    "prevAria": "Experiência anterior",
-    "nextAria": "Próxima experiência",
-    "dotAria": "Ir para experiência {{index}}",
-    "professional": {
+    "eyebrow": "Experiência",
+    "title": "Onde eu trabalhei",
+    "items": {
       "votingBuddy": {
-        "title": "Voting Buddy",
+        "company": "Voting Buddy",
+        "role": "Full Stack Developer",
+        "location": "Estados Unidos, Remoto",
+        "period": "Set/2024 – Presente",
         "bullets": [
-          {
-            "highlight": "Participei ativamente da implementação do site oficial votingbuddy.com",
-            "text": "da estrutura ao lançamento, usando React (front-end) e Strapi (back-end) para garantir escalabilidade e fácil manutenção."
-          },
-          {
-            "highlight": "Desenvolvi integração com APIs externas e internas",
-            "text": "automatizando a coleta e o processamento de dados para funcionalidades baseadas em IA e análise de comportamento do usuário."
-          },
-          {
-            "highlight": "Ajudei a montar um estande na Web Summit Rio 2025",
-            "text": "representando a empresa com soluções de engajamento cívico baseadas em machine learning e IA."
-          },
-          {
-            "highlight": "Colaborei com as equipes de design, dados e produto",
-            "text": "para garantir consistência visual, acessibilidade e desempenho responsivo em múltiplos dispositivos."
-          },
-          {
-            "highlight": "Realizei manutenção contínua e melhorias iterativas",
-            "text": "otimizando o tempo de carregamento do site e corrigindo bugs com base no feedback dos usuários e em testes automatizados."
-          }
+          "Construo e mantenho o frontend do produto em React e TypeScript, incluindo uma biblioteca de componentes compartilhada usada em 20 funcionalidades — reduzindo código de UI duplicado e mantendo a interface consistente conforme o produto cresceu.",
+          "Sou responsável pelo fluxo de busca por endereço (ElectorMap / Downballot Finder) de ponta a ponta: UI, integração com API e os estados de carregamento, vazio e erro por trás dele.",
+          "Automatizei fluxos internos de processamento de dados em Python, substituindo uma busca manual de registros de políticos um a um e economizando cerca de 10 horas por semana.",
+          "Representei a empresa na Web Summit 2025 e 2026, apresentando tecnologia cívica de IA/ML para stakeholders internacionais."
         ]
       },
-      "brazilianNavy": {
-        "title": "Marinha do Brasil",
+      "marinha": {
+        "company": "Marinha do Brasil",
+        "role": "Desenvolvedora Front-End (Estagiária)",
+        "location": "Brasil",
+        "period": "Jul/2023 – Set/2024",
         "bullets": [
-          {
-            "highlight": "Desenvolvi dashboards interativos usando Qlik Sense",
-            "text": "fornecendo à gestão insights estratégicos e suporte à decisão orientado por dados."
-          },
-          {
-            "highlight": "Mantive e atualizei sistemas web internos",
-            "text": "com foco em melhorar a experiência do usuário e a performance da interface."
-          },
-          {
-            "highlight": "Apoiei a digitalização de processos internos",
-            "text": "contribuindo para a automação e a redução de tarefas operacionais manuais."
-          },
-          {
-            "highlight": "Desenvolvi um site de ajuda para usuários internos",
-            "text": "para auxiliar os funcionários a navegar pelos sistemas e entender os procedimentos internos."
-          }
-        ]
-      },
-      "fiocruz": {
-        "title": "Fundação Oswaldo Cruz (FIOCRUZ)",
-        "bullets": [
-          {
-            "highlight": "Atuei na linha de produção de biofármacos e da vacina contra a COVID-19 da AstraZeneca",
-            "text": "seguindo rigorosamente as Boas Práticas de Fabricação (BPF) e os princípios ALCOA++."
-          },
-          {
-            "highlight": "Realizei controle de qualidade em etapas críticas da produção",
-            "text": "garantindo rastreabilidade, conformidade regulatória e integridade dos dados."
-          },
-          {
-            "highlight": "Gerenciei documentação técnica e protocolos operacionais",
-            "text": "apoiando auditorias bem-sucedidas e a conformidade com regulamentações nacionais e internacionais."
-          }
-        ]
-      }
-    },
-    "academic": {
-      "bachelors": {
-        "title": "Bacharelado",
-        "bullets": [
-          {
-            "highlight": "Atualmente cursando Bacharelado em Ciência da Computação",
-            "text": "com forte foco em desenvolvimento de software, resolução de problemas e pensamento computacional."
-          },
-          {
-            "highlight": "Construí uma base sólida em programação e fundamentos de ciência da computação",
-            "text": "incluindo algoritmos, estruturas de dados, arquitetura de software e tecnologias web."
-          },
-          {
-            "highlight": "Apliquei conhecimento acadêmico em projetos reais",
-            "text": "conectando conceitos teóricos com desenvolvimento front-end e full-stack na prática."
-          },
-          {
-            "highlight": "Desenvolvi fortes habilidades de raciocínio analítico e lógico",
-            "text": "apoiando depuração eficiente, design de sistemas e soluções escaláveis."
-          }
-        ]
-      },
-      "chemistry": {
-        "title": "Técnico em Química",
-        "bullets": [
-          {
-            "highlight": "Concluí o Curso Técnico em Química",
-            "text": "com forte ênfase em práticas laboratoriais, precisão de dados e controle de processos."
-          },
-          {
-            "highlight": "Desenvolvi disciplina e atenção aos detalhes",
-            "text": "por meio da rigorosa aderência a procedimentos, padrões de documentação e requisitos de qualidade."
-          },
-          {
-            "highlight": "Ganhei experiência trabalhando em ambientes regulados",
-            "text": "o que moldou um forte senso de responsabilidade, precisão e confiabilidade."
-          }
-        ]
-      },
-      "development": {
-        "title": "Desenvolvimento Acadêmico e Profissional",
-        "bullets": [
-          {
-            "highlight": "Participei de eventos internacionais de tecnologia",
-            "text": "como a Web Summit, discutindo temas relacionados a IA, engenharia de software e desenvolvimento de produto."
-          },
-          {
-            "highlight": "Investi continuamente em aprendizado autodirigido",
-            "text": "por meio de cursos online, documentação técnica e experimentação prática."
-          },
-          {
-            "highlight": "Fortaleci habilidades de comunicação e colaboração",
-            "text": "trabalhando em ambientes multidisciplinares e multiculturais."
-          }
+          "Desenvolvi e mantive uma aplicação web interna usando HTML, CSS e JavaScript.",
+          "Substituí relatórios manuais por um dashboard interativo em Qlik Sense para uma equipe de 8 pessoas, economizando cerca de 2 horas por dia de coleta manual de dados."
         ]
       }
     }
   },
   "recommendations": {
-    "title": "Recomendações",
-    "prevAria": "Recomendação anterior",
-    "nextAria": "Próxima recomendação",
-    "dotAria": "Ir para recomendação {{index}}"
+    "eyebrow": "Recomendações",
+    "title": "O que dizem sobre trabalhar comigo"
   },
   "projects": {
-    "title": "Projetos Pessoais",
-    "webGame": {
-      "title": "Web Game",
-      "desc": "Jogo casual para navegador, focado em sessões rápidas, controles simples e uma experiência responsiva em desktop e mobile."
-    },
+    "eyebrow": "Projetos",
+    "title": "O que eu construí",
+    "viewProject": "Ver projeto",
+    "viewCode": "Ver código",
     "orbisFinance": {
       "title": "Orbis Finance",
-      "desc": "Dashboard financeiro para visualização de métricas com gráficos e tabelas, filtros básicos e ênfase em clareza e leitura rápida."
+      "desc": "Plataforma de finanças pessoais em produção, substituindo planilhas por dashboards mensais e diários estruturados. Inclui um pipeline de importação de CSV para faturas de cartão, notificações agendadas de vencimento e autenticação por usuário com row-level security."
     },
-    "districtDmv": {
-      "title": "District DMV Lookup",
-      "desc": "Consulta distritos legislativos em DC/MD/VA a partir de um endereço, visualiza limites em um mapa interativo e gera uma cédula de amostra somente com cargos executivos (downballot opcional)."
+    "districtLookup": {
+      "title": "District Lookup Tool",
+      "desc": "Resolve o endereço de um eleitor para seus distritos legislativos usando dados geoespaciais públicos do governo, renderiza os limites em um mapa interativo e gera uma cédula de amostra dos cargos eletivos."
+    },
+    "statusMonitor": {
+      "title": "Status Monitor Service",
+      "desc": "Serviço de automação em produção que monitora uma página de status governamental, detecta mudanças de estado e envia alertas, com lógica de deduplicação e execução agendada via GitHub Actions."
     }
   },
-  "skills": {
-    "title": "Habilidades",
-    "subtitle": "Tecnologias que uso para construir aplicações incríveis:"
+  "stack": {
+    "eyebrow": "Stack",
+    "title": "Tecnologias que eu uso",
+    "groups": {
+      "frontend": "Front-end",
+      "backend": "Back-end & dados",
+      "tooling": "Ferramentas"
+    }
   },
   "footer": {
     "copyright": "Copyright © Maria Cagy · {{year}}",
