@@ -3,19 +3,7 @@ import { useReducedMotion } from "framer-motion";
 import { SectionHeading } from "../../section-heading/section-heading";
 import { ScrollEnter } from "../../motion/ScrollEnter";
 import { stackGroups } from "./data";
-import {
-  Bar,
-  Group,
-  GroupsGrid,
-  GroupTitle,
-  Item,
-  ItemList,
-  ItemName,
-  Percent,
-  Row,
-  StackSection,
-  Track,
-} from "./styles";
+import { Bar, Group, GroupsGrid, GroupTitle, Item, ItemList, ItemName, StackSection, Track } from "./styles";
 
 export function Stack() {
   const { t } = useTranslation();
@@ -35,10 +23,7 @@ export function Stack() {
               <ItemList>
                 {group.items.map((item) => (
                   <Item key={item.name}>
-                    <Row>
-                      <ItemName>{item.name}</ItemName>
-                      <Percent aria-hidden="true">{item.level}%</Percent>
-                    </Row>
+                    <ItemName>{item.name}</ItemName>
                     <Track>
                       <Bar
                         aria-hidden="true"

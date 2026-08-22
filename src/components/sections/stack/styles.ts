@@ -52,24 +52,10 @@ export const Item = styled.div`
   gap: 0.45rem;
 `;
 
-export const Row = styled.div`
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.5rem;
-`;
-
 export const ItemName = styled.span`
   font-family: var(--font-mono);
   font-size: 0.85rem;
   color: var(--color-card-foreground, var(--color-text));
-`;
-
-export const Percent = styled.span`
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--color-text-muted);
-  flex-shrink: 0;
 `;
 
 export const Track = styled.span`
