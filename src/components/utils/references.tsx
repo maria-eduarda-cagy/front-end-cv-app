@@ -1,77 +1,7 @@
-//icons
-import javascript from "../../assets/icons/javascript.svg";
-import react from "../../assets/icons/react.svg";
-import typescript from "../../assets/icons/typescript.svg";
-import nextjs from "../../assets/icons/nextjs.svg";
-import html from "../../assets/icons/html.svg";
-import css from "../../assets/icons/css.svg";
-import github from "../../assets/icons/github-purple.svg";
-import git from "../../assets/icons/git.svg";
-import figma from "../../assets/icons/figma.svg";
 import jamisImage from "../../assets/recomendations/jamis-profile.jpeg";
 import lethiciaImage from "../../assets/recomendations/lethicia-profile.jpeg";
 import diegoImage from "../../assets/recomendations/diego-profile.jpeg";
-import {
-  getYearsAndMonthsFrom,
-  type CareerExperience,
-  type Recommendation,
-} from "./utils";
-
-//references
-export const experienceAsFrontendDev = getYearsAndMonthsFrom(2023, 7);
-
-export const experienceWithReactAndTS = getYearsAndMonthsFrom(2024, 9);
-
-export const skillsData = [
-  { src: javascript, alt: "JavaScript", name: "JavaScript" },
-  { src: react, alt: "React", name: "React" },
-  { src: typescript, alt: "TypeScript", name: "TypeScript" },
-  { src: nextjs, alt: "Next.js", name: "Next.js" },
-  { src: html, alt: "HTML5", name: "HTML5" },
-  { src: css, alt: "CSS3", name: "CSS3" },
-  { src: github, alt: "GitHub", name: "GitHub" },
-  { src: git, alt: "Git", name: "Git" },
-  { src: figma, alt: "Figma", name: "Figma" },
-];
-
-// title/bullets text lives in src/locales/*.json under career.professional.<translationKey>
-export const professionalCareerData: CareerExperience[] = [
-  {
-    translationKey: "votingBuddy",
-    section: "professional",
-    href: "https://votingbuddy.com",
-    period: "Sep/2024 · Present",
-  },
-  {
-    translationKey: "brazilianNavy",
-    section: "professional",
-    period: "Jul/2023 · Sep/2024",
-  },
-  {
-    translationKey: "fiocruz",
-    section: "professional",
-    period: "Feb/2021 · Apr/2025",
-  },
-];
-
-// title/bullets text lives in src/locales/*.json under career.academic.<translationKey>
-export const academicCareerData: CareerExperience[] = [
-  {
-    translationKey: "bachelors",
-    section: "academic",
-    period: "2023 · Present",
-  },
-  {
-    translationKey: "chemistry",
-    section: "academic",
-    period: "2016 · 2021",
-  },
-  {
-    translationKey: "development",
-    section: "academic",
-    period: "Ongoing",
-  },
-];
+import type { Recommendation } from "./utils";
 
 // Recommendations are direct quotes from real people, written in first
 // person. They intentionally stay untranslated and are not sourced from
