@@ -9,7 +9,8 @@
 .app-content {
   flex: 1;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   background-color: var(--color-bg);
 }
