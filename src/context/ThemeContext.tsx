@@ -5,13 +5,15 @@ const STORAGE_KEY = "theme-mode";
 
 function getStoredTheme(): ThemeMode {
   const stored = window.localStorage.getItem(STORAGE_KEY);
-  return stored === "dark" ? "dark" : "light";
+  if (stored === "dark" || stored === "light") return stored;
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
 export function ThemeModeProvider({ children }: { children: ReactNode }) {
-  // Light is the default; the inline script in index.html already applied
-  // the stored/light theme to <html data-theme> before this mounts, so we
-  // just mirror that value here to avoid a mismatched first render.
+  // No stored preference yet? Fall back to the OS/browser preference. The
+  // inline script in index.html already applied this same logic to
+  // <html data-theme> before this mounts, so we just mirror it here to
+  // avoid a mismatched first render.
   const [mode, setMode] = useState<ThemeMode>(getStoredTheme);
 
   useEffect(() => {

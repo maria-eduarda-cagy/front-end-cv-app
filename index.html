@@ -36,11 +36,15 @@
       content="Full Stack Developer with 3 years of experience in React, Next.js and TypeScript, working remotely with a U.S. product team."
     />
     <script>
-      // Applies the stored theme (default: light) before React mounts,
-      // so the first paint never flashes the wrong theme.
+      // Applies the stored theme, or the OS/browser preference if none is
+      // stored yet, before React mounts, so the first paint never flashes
+      // the wrong theme.
       (function () {
         var stored = localStorage.getItem("theme-mode");
-        document.documentElement.dataset.theme = stored === "dark" ? "dark" : "light";
+        var theme = stored === "dark" || stored === "light"
+          ? stored
+          : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = theme;
       })();
     </script>
   </head>

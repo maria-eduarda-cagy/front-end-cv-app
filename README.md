@@ -69,9 +69,11 @@ Treated as a requirement across every section, not a final pass:
 
 ## Theme (light/dark) and Language
 
-- **Theme**: light by default, togglable via the header. An inline script
-  in `index.html` applies the saved theme before React mounts, so there's
-  no flash of the wrong theme on load.
+- **Theme**: follows the visitor's saved choice, then their OS/browser
+  preference (`prefers-color-scheme`), then falls back to light. Manually
+  switchable via the header toggle; the choice persists in `localStorage`.
+  An inline script in `index.html` applies the resolved theme before React
+  mounts, so there's no flash of the wrong theme on load.
 - **Language**: auto-detects the visitor's browser language among English,
   Portuguese-BR and Spanish (falls back to English otherwise). Manually
   switchable via the `EN | PT | ES` control in the header; the choice
