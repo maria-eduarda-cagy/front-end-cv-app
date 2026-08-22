@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { up } from "../../styles/media";
+import { breakpoints } from "../../styles/breakpoints";
 
 export const HeaderWrapper = styled.header`
   position: sticky;
@@ -55,7 +56,7 @@ export const Nav = styled.nav<{
     flex-wrap: wrap;
     justify-content: flex-end;
 
-    @media (max-width: 900px) {
+    @media (max-width: calc(${breakpoints.lg} - 1px)) {
       display: none;
     }
   `}
@@ -72,7 +73,7 @@ export const Nav = styled.nav<{
     background: var(--color-card);
     width: 100%;
 
-    ${up.md} {
+    ${up.lg} {
       display: none;
     }
   `}
@@ -126,7 +127,7 @@ export const BurgerButton = styled.button`
     flex-shrink: 0;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: calc(${breakpoints.lg} - 1px)) {
     display: flex;
   }
 `;

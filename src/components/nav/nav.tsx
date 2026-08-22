@@ -14,8 +14,9 @@ import {
 import { ThemeToggle } from "../theme-toggle/theme-toggle";
 import { LanguageSwitcher } from "../language-switcher/language-switcher";
 import brandMark from "../../assets/icons/Link.png";
+import { breakpoints } from "../../styles/breakpoints";
 
-const MOBILE_BREAKPOINT = 900;
+const MOBILE_BREAKPOINT = parseInt(breakpoints.lg, 10);
 
 export function Nav() {
   const { t } = useTranslation();
